@@ -1,6 +1,4 @@
 import './style.css'
-import viteLogo from '/1.jpg'
-import { setupCounter } from './counter.ts'
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
 <div class="min-h-screen bg-base-200 text-base-content p-6 flex flex-col items-center space-y-6 text-center">
@@ -87,5 +85,3 @@ document.getElementById('btnNews')!.addEventListener('click', () => {
     const url = `https://finviz.com/quote.ashx?t=${selectedTicker.toUpperCase()}#news`
     window.open(url, '_blank')
 })
-
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
